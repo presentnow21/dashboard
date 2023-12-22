@@ -1,0 +1,3 @@
+[ user 정보와, user가 작성한 글 갯수 구하기 ]
+
+SELECT U.email, U.username, COUNT(P.author) AS total FROM USER U JOIN post P ON P.author = U.idx GROUP BY P.author;

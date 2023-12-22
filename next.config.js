@@ -1,4 +1,16 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  reactStrictMode: false,
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'http',
+        hostname: 'localhost',
+      },
+    ],
+    // loader: 'custom',
+    // loaderFile: './src/utils/loader.ts',
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
